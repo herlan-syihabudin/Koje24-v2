@@ -1,0 +1,25 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f6fbfb;
+  color: #0e1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #0FA3A8;
+  color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}

@@ -1,29 +1,337 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>KOJE24 • Natural Cold-Pressed Juice | Healthy Daily Detox</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="KOJE24: minuman cold-pressed alami tanpa gula & pengawet. Segar tiap hari untuk hidup lebih sehat. Explore the Taste, Explore the World.">
+  <meta property="og:title" content="KOJE24 • Natural Cold-Pressed Juice">
+  <meta property="og:description" content="Minuman cold-pressed alami tanpa gula & pengawet. Segar tiap hari, untuk hidup lebih sehat.">
+  <meta property="og:type" content="website">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header>
-    <h1>KOJE24</h1>
-    <p>Explore the Taste, Explore the World.</p>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container wrap">
+      <a class="brand" href="#hero" aria-label="KOJE24">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczPBjvtw_vHO1qfGo7-q2mXD3qQbyRd8HcmqBVPGVt2kBSP8Ud02MEfzAMnx1BiGa5L3-XRqfF3QpveEWpj5YhFgab-UtHSRLCYxjU_CkFmZ4yBZvLKdr2gPbQl8ArXFf_xxUJjmB_klRkpnmoCOxSXx=w1408-h736-s-no-gm?authuser=0" alt="KOJE24">
+      </a>
+      <nav class="navlinks">
+        <a href="#best">Produk</a>
+        <a href="#paket">Paket</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#" data-open="faq">FAQ</a>
+      </nav>
+      <div class="hicons">
+        <a class="btn btn-ghost small" href="https://wa.me/6282213139580?text=Halo%20KOJE24" target="_blank" rel="noopener">Chat</a>
+      </div>
+    </div>
   </header>
 
-  <section id="produk">
-    <h2>Varian Produk</h2>
-    <div class="produk">
-      <div class="card">
-        <h3>Green Detox</h3>
-        <p>Campuran wortel, nanas, jahe — segar & alami.</p>
-        <button class="order">Pesan via WhatsApp</button>
+  <!-- HERO -->
+  <section class="hero" id="hero" data-animate>
+    <div class="container inner">
+      <div class="hero-copy">
+        <h1>Natural Juice for Everyday Balance</h1>
+        <p>Minuman cold-pressed premium tanpa gula & pengawet — rasa jujur dari bahan segar untuk energi & imun harian.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#" data-open="cobasekarang">Coba Sekarang</a>
+          <a class="btn btn-ghost" href="#" data-open="langganan">Langganan</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img data-src="https://lh3.googleusercontent.com/pw/AP1GczNr8O8hDZZ-9ESpyrlxREvV0KlsVuYbXpsDzAy80pjtvpd5hB6yCp_Bv6dcf4lnJU05KxaFrqJAnlUrE0DTTtDU-WC59FylaT_h2WoEWTZ8m2ch7S_PvbmqDEkvuMu8PwYUDDyFoqCS7qVmjV7ifxvy=w1536-h1024-s-no-gm?authuser=0" alt="KOJE24 Hero">
       </div>
     </div>
   </section>
 
-  <script src="js/main.js"></script>
+  <!-- PRODUK -->
+  <section id="best" class="section" data-animate>
+    <div class="container">
+      <h2 class="section-title">Varian Produk</h2>
+      <div class="best-list" id="best-list"></div>
+    </div>
+  </section>
+
+  <!-- PAKET -->
+  <section id="paket" class="section" data-animate>
+    <div class="container">
+      <h2 class="section-title">Paket Sehat</h2>
+      <p class="section-sub">Lebih hemat dan praktis. Cocok untuk rutinitas sehat harian keluarga.</p>
+      <div class="paket-grid">
+        <article class="paket-card">
+          <div class="paket-tag hemat">Hemat</div>
+          <h3>Starter 7-Day</h3>
+          <div class="harga">Rp 159.000</div>
+          <ul>
+            <li>7 botol campur varian</li>
+            <li>Gratis konsultasi rasa</li>
+            <li>Jadwal kirim fleksibel</li>
+          </ul>
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/6282213139580?text=Halo%20KOJE24%2C%20saya%20mau%20ambil%20paket%207%20hari">Ambil Paket</a>
+        </article>
+        <article class="paket-card highlight">
+          <div class="paket-tag terlaris">Terlaris</div>
+          <h3>Wellness 14-Day</h3>
+          <div class="harga">Rp 299.000</div>
+          <ul>
+            <li>14 botol • pilih varian</li>
+            <li>Prioritas produksi segar</li>
+            <li>Bonus 1 botol</li>
+          </ul>
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/6282213139580?text=Halo%20KOJE24%2C%20saya%20mau%20ambil%20paket%2014%20hari">Ambil Paket</a>
+        </article>
+        <article class="paket-card">
+          <div class="paket-tag family">Family</div>
+          <h3>Family 30-Day</h3>
+          <div class="harga">Rp 579.000</div>
+          <ul>
+            <li>30 botol • mix keluarga</li>
+            <li>Jadwal kirim mingguan</li>
+            <li>Garansi fresh & aman</li>
+          </ul>
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/6282213139580?text=Halo%20KOJE24%2C%20saya%20mau%20ambil%20paket%2030%20hari">Ambil Paket</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTIKEL -->
+  <section id="artikel" class="section" data-animate>
+    <div class="container">
+      <h2 class="section-title">Artikel & Tips Sehat</h2>
+      <p class="section-sub">Edukasi singkat, ringan, dan bisa langsung dipraktekkan.</p>
+      <div class="blog-list">
+        <article class="blog-item">
+          <div class="blog-img">
+            <img data-src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1600&auto=format&fit=crop" alt="Manfaat Cold-Pressed">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-tag">Wellness</span><span class="blog-date">Updated • 2025</span></div>
+            <h3 class="blog-h3">Kenapa Cold-Pressed Lebih Baik buat Rutinitas Harian?</h3>
+            <p class="blog-desc">Perasan tanpa panas menjaga enzim & nutrisi tetap utuh, cocok untuk energi dan imun harian keluarga.</p>
+            <div class="blog-actions">
+              <a class="blog-btn" target="_blank" rel="noopener" href="https://sites.google.com/view/koje24/artikel">Baca Selengkapnya</a>
+              <a class="blog-btn" href="#paket">Lihat Paket Sehat</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-item">
+          <div class="blog-img">
+            <img data-src="https://images.unsplash.com/photo-1467453678174-768ec283a940?q=80&w=1600&auto=format&fit=crop" alt="Detox Ringan">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span class="blog-tag">Detox</span><span class="blog-date">Updated • 2025</span></div>
+            <h3 class="blog-h3">Detox Ringan yang Aman untuk Aktivitas Padat</h3>
+            <p class="blog-desc">Kunyit, jahe, lemon & jeruk nipis bantu pencernaan tanpa bikin lemas.</p>
+            <div class="blog-actions">
+              <a class="blog-btn" target="_blank" rel="noopener" href="https://sites.google.com/view/koje24/artikel">Baca Selengkapnya</a>
+              <a class="blog-btn" href="#paket">Lihat Paket Sehat</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI PREVIEW -->
+  <section id="testimoni" class="section" data-animate>
+    <div class="container">
+      <h2 class="section-title">Apa Kata Mereka</h2>
+      <div id="t-list" class="t-grid"></div>
+      <div class="t-cta">
+        <button id="t-open" class="btn btn-primary">+ Tulis Testimoni</button>
+        <a href="#" id="seeTestimoniBtn" class="btn btn-ghost" data-open="testimoni">Lihat Semua</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="brandline">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczPBjvtw_vHO1qfGo7-q2mXD3qQbyRd8HcmqBVPGVt2kBSP8Ud02MEfzAMnx1BiGa5L3-XRqfF3QpveEWpj5YhFgab-UtHSRLCYxjU_CkFmZ4yBZvLKdr2gPbQl8ArXFf_xxUJjmB_klRkpnmoCOxSXx=w1408-h736-s-no-gm?authuser=0" alt="KOJE24">
+        <div class="badges">
+          <span class="badge">Cold-Pressed</span>
+          <span class="badge">No Added Sugar</span>
+          <span class="badge">Fresh Daily</span>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <h4>Tentang</h4>
+          <p>KOJE24 adalah minuman cold-pressed alami untuk keseharian yang seimbang — rasa jujur dari bahan segar.</p>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <ul class="plain">
+            <li>WhatsApp: <a href="https://wa.me/6282213139580" target="_blank" rel="noopener">0822-1313-9580</a></li>
+            <li>Email: <a href="mailto:halo@koje24.id">halo@koje24.id</a></li>
+            <li>Instagram: <a href="https://instagram.com" target="_blank" rel="noopener">@koje24</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Bantuan</h4>
+          <ul class="plain">
+            <li><a href="#" data-open="langganan">Langganan</a></li>
+            <li><a href="#" data-open="tentang">Tentang KOJE24</a></li>
+            <li><a href="#" data-open="testimoni">Testimoni</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Jam Produksi</h4>
+          <p>Senin–Sabtu: 07.00–16.00<br/>Minggu: by request</p>
+        </div>
+      </div>
+
+      <div class="legal">
+        <span>© 2025 <strong>KOJE24</strong> • Made in Indonesia</span>
+        <span><a href="#best">Produk</a> • <a href="#paket">Paket</a> • <a href="#artikel">Artikel</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY TOTAL BAR (dinamis dari JS) -->
+
+  <!-- MODALS -->
+  <div id="tentang-modal" class="t-modal">
+    <div class="t-box">
+      <button class="t-close">×</button>
+      <h3 class="t-title">Tentang <span class="brand-text">KOJE24</span></h3>
+      <p class="t-sub">Natural • Honest • Daily Wellness</p>
+      <p><strong>KOJE24</strong> adalah brand minuman sehat alami hasil cold-pressed, dibuat dari bahan segar (wortel, jeruk, jahe, kunyit, lengkuas, serai, nanas, lemon) tanpa gula & pengawet.</p>
+      <ul>
+        <li>100% bahan segar</li>
+        <li>Tanpa pengawet & pewarna</li>
+        <li>Teknologi cold-pressed</li>
+        <li>Aman untuk keluarga</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="langganan-modal" class="t-modal">
+    <div class="t-box">
+      <button class="t-close">×</button>
+      <h3 class="t-title">Langganan KOJE24</h3>
+      <p class="t-sub">Pilih paket hemat & fleksibel 💧</p>
+      <ul>
+        <li><strong>Starter 7 Day – Rp159rb</strong></li>
+        <li><strong>Wellness 14 Day – Rp299rb</strong> (bonus 1)</li>
+        <li><strong>Family 30 Day – Rp579rb</strong></li>
+      </ul>
+      <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/6282213139580?text=Halo%20KOJE24%2C%20ingin%20berlangganan%20paket%20sehat">Chat WhatsApp</a>
+    </div>
+  </div>
+
+  <div id="cobasekarang-modal" class="t-modal">
+    <div class="t-box">
+      <button class="t-close">×</button>
+      <h3 class="t-title">Coba Sekarang</h3>
+      <p class="t-sub">Pilih varian favoritmu 💚</p>
+      <ul>
+        <li><b>Detox</b> – kunyit, jahe, lemon</li>
+        <li><b>Sunrise</b> – nanas & jeruk</li>
+        <li><b>Beetroot</b> – bit & wortel</li>
+        <li><b>Green Energy</b> – sawi & apel hijau</li>
+      </ul>
+      <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/6282213139580?text=Halo%20KOJE24%2C%20saya%20ingin%20mencoba%20varian%20juice">Chat untuk Coba</a>
+    </div>
+  </div>
+
+  <div id="faq-modal" class="t-modal">
+    <div class="t-box">
+      <button class="t-close">×</button>
+      <h3 class="t-title">Pertanyaan yang Sering Diajukan</h3>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Apakah KOJE24 tanpa pengawet?</button>
+          <div class="faq-answer"><p>Ya. 100% tanpa pengawet/pewarna/gula tambahan. Disimpan dingin agar segar.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Tahan berapa lama?</button>
+          <div class="faq-answer"><p>Dalam kulkas 2–5°C: 3–4 hari. Hindari panas & sinar langsung.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Aman untuk ibu hamil & anak?</button>
+          <div class="faq-answer"><p>Aman karena alami. Konsultasikan dokter bila ada kondisi khusus.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Cara pesan?</button>
+          <div class="faq-answer"><p>Klik “Coba Sekarang”/“Order via WhatsApp”, pilih varian, konfirmasi alamat.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimoni Info -->
+  <div id="testimoni-modal" class="t-modal">
+    <div class="t-box">
+      <button class="t-close">×</button>
+      <h3 class="t-title">Testimoni Pelanggan</h3>
+      <p class="t-sub">Semua ulasan asli dari pelanggan KOJE24.</p>
+      <a class="btn btn-primary" href="#" id="openListBtn">Lihat Semua Testimoni</a>
+    </div>
+  </div>
+
+  <!-- Testimoni Form -->
+  <div id="tModal" class="t-modal">
+    <div class="t-box">
+      <button class="t-close">×</button>
+      <h3 class="t-title">Tulis Testimoni</h3>
+      <form id="testiForm" class="t-form">
+        <label>Nama</label>
+        <input type="text" name="nama" required placeholder="Nama lengkap" />
+        <label>Kota</label>
+        <input type="text" name="kota" required placeholder="Kota domisili" />
+        <label>Varian Favorit</label>
+        <select name="varian" required>
+          <option value="">Pilih Varian</option>
+          <option>Detox</option><option>Sunrise</option><option>Beetroot</option>
+          <option>Green Energy</option><option>Immune Boost</option>
+          <option>Red Power</option><option>Golden Tonic</option><option>Other</option>
+        </select>
+        <label>Rating</label>
+        <select name="rating" required>
+          <option value="">Pilih Rating</option>
+          <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+        </select>
+        <label>Pesan</label>
+        <textarea name="pesan" required placeholder="Ceritakan pengalamanmu"></textarea>
+        <button type="submit" class="btn btn-primary">Kirim Testimoni</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Testimoni List -->
+  <div id="testimoni-list-modal" class="t-modal">
+    <div class="t-box">
+      <button class="t-close">×</button>
+      <h3 class="t-title">Semua Testimoni</h3>
+      <div id="t-list-full"><p class="muted">Memuat testimoni…</p></div>
+      <div class="center">
+        <button id="t-open-list" class="btn btn-ghost">+ Tulis Testimoni</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM NAV (mobile) -->
+  <nav class="bottom-nav">
+    <a href="#best"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2 3 7v7c0 5 4 8 9 8s9-3 9-8V7z" stroke="currentColor" stroke-width="1.6" fill="none"/></svg><small>Produk</small></a>
+    <a href="#paket"><svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16v10H4zM4 7l8-4 8 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg><small>Paket</small></a>
+    <a href="#" data-open="testimoni"><svg class="icon" viewBox="0 0 24 24"><path d="M21 11.5a9 9 0 1 1-6.5-8.6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg><small>Testi</small></a>
+    <a href="#" data-open="faq"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 15h.01M11 7h2a2 2 0 0 1 0 4h-1v2" stroke="currentColor" stroke-width="1.6" fill="none"/></svg><small>FAQ</small></a>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="app.js" defer></script>
 </body>
 </html>
